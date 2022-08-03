@@ -1,0 +1,21 @@
+body {
+    background-color: #eee;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    width: 200px;
+}
+
+fieldset {
+    padding: 1em 1em;
+    margin: 2em 2em;
+}
+
+div textarea {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}

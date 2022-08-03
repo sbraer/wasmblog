@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Wasm Example</title>
+        <script type="text/javascript">
+            var Module = {
+                onRuntimeInitialized: function() {
+                    console.log('Module loaded: ', Module);
+                    GetString();
+                    CheckClass();
+                    GetSquare();
+                }
+            };
+        </script>
+        <script defer type="text/javascript" src="main.js"></script>
+        <script defer src="my-code.js" type="text/javascript"></script>
+    </head>
+    <body style="text-align:xcenter">
+      <h1>Example WASM C++</h1>
+      <div id="output1"></div>
+      <div id="output2"></div>
+      <div id="output3"></div>
+    </body>
+    
+</html>

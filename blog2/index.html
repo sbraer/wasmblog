@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Wasm Example 2</title>
+        <script type="text/javascript">
+            var Module = {
+                onRuntimeInitialized: function() {
+                    console.log('Module loaded: ', Module);
+                }
+            };
+        </script>
+        <script defer type="text/javascript" src="main.js"></script>
+        <script defer src="my-code.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="text-align:xcenter">
+      <h1>Example WASM C++ 2</h1>
+
+      <fieldset>
+        <legend>From C++</legend>
+        <div>
+            <button id="bt1">Write Date</button>
+            <span id="spanDate">---</span>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Fetch in C++</legend>
+        <div>
+            <button id="btFetch1">fetch json file</button>
+            <span id="spanFetch1">---</span>
+        </div>
+        <div>
+            <button id="btFetch2">fetch json file with error</button>
+            <span id="spanFetch2">---</span>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Main Loop</legend>
+        <div>
+            <button id="btStartMainLoop">Start/Stop Main loop</button>
+            <span id="spanMainLoop">---</span>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Benchmark Bubble Sort</legend>
+        <div>
+            <button id="btBubbleSortJs">Sort with Javascript</button>
+            <span id="spanBubbleSortJs">---</span>
+        </div>
+        <div>
+            <textarea readonly cols="80" rows="10" id="txtBubbleSortJs"></textarea>
+        </div>
+        <div>
+            <button id="btBubbleSortWasm">Sort with Wasm</button>
+            <span id="spanBubbleSortWasm">---</span>
+        </div>
+        <div>
+            <textarea readonly cols="80" rows="10" id="txtBubbleSortWasm"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Benchmark Quick Sort</legend>
+        <div>
+            <button id="btQuickSortJs">Sort with Javascript</button>
+            <span id="spanQuickSortJs">---</span>
+        </div>
+        <div>
+            <textarea readonly cols="80" rows="10" id="txtQuickSortJs"></textarea>
+        </div>
+        <div>
+            <button id="btQuickSortWasm">Sort with Wasm</button>
+            <span id="spanQuickSortWasm">---</span>
+        </div>
+        <div>
+            <textarea readonly cols="80" rows="10" id="txtQuickSortWasm"></textarea>
+        </div>
+      </fieldset>
+
+    </body>
+    
+</html>
